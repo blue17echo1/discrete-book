@@ -2169,12 +2169,10 @@ For those of you reading this in a pdf or in print, I encourage you to also chec
 \par
 \hypertarget{p-25}{}%
 You can view the interactive version for free at \url{http://discrete.openmathbooks.org/} or by scanning the QR code below with your smart phone.%
-\begin{sidebyside}{1}{0.375}{0.375}{0}%
-\begin{sbspanel}{0.25}%
-\includegraphics[width=1\linewidth]{images/qrcode.png}
-\end{sbspanel}%
-\end{sidebyside}%
-\end{paragraphs}%
+\begin{center}
+\includegraphics[width=1.5in]{images/qrcode.png}
+\end{center}
+\end{paragraphs}
 \end{preface}
 %% begin: table of contents
 %% Adjust Table of Contents
@@ -2200,6 +2198,7 @@ Welcome to Discrete Mathematics. If this is your first time encountering the sub
 \typeout{Section 0.1 What is Discrete Mathematics?}
 \typeout{************************************************}
 %
+\vskip -1ex
 \begin{sectionptx}{What is Discrete Mathematics?}{}{What is Discrete Mathematics?}{}{}{sec_intro-intro}
 \begin{quote}\hypertarget{blockquote-1}{}
 \hypertarget{p-27}{}%
@@ -2224,7 +2223,7 @@ One way to get a feel for the subject is to consider the types of problems you s
 \emph{Note: Throughout the text you will see \emph{Investigate!} activities like this one. Answer the questions in these as best you can to give yourself a feel for what is coming next.}%
 \par
 \hypertarget{p-34}{}%
-\leavevmode%
+% \leavevmode%
 \begin{enumerate}
 \item\hypertarget{li-5}{}\hypertarget{p-35}{}%
 The most popular mathematician in the world is throwing a party for all of his friends. As a way to kick things off, they decide that everyone should shake hands. Assuming all 10 people at the party each shake hands with every other person (but not themselves, obviously) exactly once, how many handshakes take place?%
@@ -2376,6 +2375,7 @@ Note that for us, \emph{or} is the \terminology{inclusive or} \index{inclusive o
 \end{subsectionptx}
 %
 %
+\clearpage
 \typeout{************************************************}
 \typeout{Subsection  Implications}
 \typeout{************************************************}
@@ -2637,6 +2637,7 @@ Thinking about the necessity and sufficiency of conditions can also help when wr
 \end{subsectionptx}
 %
 %
+\clearpage
 \typeout{************************************************}
 \typeout{Subsection  Predicates and Quantifiers}
 \typeout{************************************************}
@@ -3225,7 +3226,7 @@ Another way we could have written this set, using more strict set builder notati
 We already have a lot of notation, and there is more yet. Below is a handy chart of symbols. Some of these will be discussed in greater detail as we move forward.%
 \begin{assemblage}{Special sets.}{assemblage-10}%
 \hypertarget{p-469}{}%
-\leavevmode%
+% \leavevmode%
 \begin{description}
 \item[{\(\emptyset\)}]\hypertarget{li-476}{}\hypertarget{p-470}{}%
 The \terminology{empty set} is the set which contains no elements. \label{notation-7}
@@ -3253,7 +3254,7 @@ The \terminology{power set} of any set \(A\) is the set of all subsets of \(A\).
 \end{assemblage}
 \begin{assemblage}{Set Theory Notation.}{assemblage-11}%
 \hypertarget{p-477}{}%
-\leavevmode%
+% \leavevmode%
 \begin{description}
 \item[{\(\{, \}\)}]\hypertarget{li-483}{}\hypertarget{p-478}{}%
 We use these \terminology{braces} to enclose the elements of a set. So \(\{1,2,3\}\) is the set containing 1, 2, and 3. \label{notation-14}
@@ -5138,6 +5139,7 @@ To summarize:%
 \hypertarget{p-1154}{}%
 Again, we can easily extend this to any number of sets.%
 \end{subsectionptx}
+\clearpage
 %
 %
 \typeout{************************************************}
@@ -7118,10 +7120,8 @@ Your favorite mathematical ice-cream parlor offers 10 flavors. How many milkshak
 We get six scoops, each of which could be one of ten possible flavors. Represent each scoop as a star. Think of going down the counter one flavor at a time: you see vanilla first, and skip to the next, chocolate. You say yes to chocolate three times (use three stars), then switch to the next flavor. You keep skipping until you get to cherry, which you say yes to twice. Another switch and you are at mint chocolate chip. You say yes once. Then you keep switching until you get past the last flavor, never saying yes again (since you already have said yes six times). There are ten flavors to choose from, so we must switch from considering one flavor to the next nine times. These are the nine bars.%
 \par
 \hypertarget{p-1965}{}%
-Now that we are confident that we have the right number of stars and bars, we answer the question simply: there are 6 stars and 9 bars, so 15 symbols. We need to pick 9 of them to be bars, so the number of milkshakes possible is%
-\begin{equation*}
-\binom{15}{9}\text{.}
-\end{equation*}
+Now that we are confident that we have the right number of stars and bars, we answer the question simply: there are 6 stars and 9 bars, so 15 symbols. We need to pick 9 of them to be bars, so the number of milkshakes possible is 
+\(\binom{15}{9}\text{.}\)
 %
 \end{example}
 \begin{example}{}{example-49}%
@@ -7137,10 +7137,10 @@ We need to decide on 7 digits so we will use 7 stars. The bars will represent a 
 %
 \par
 \hypertarget{p-1968}{}%
-There are 10 choices for each digit (0-9) so we must switch between choices 9 times. We have 7 stars and 9 bars, so the total number of phone numbers is%
-\begin{equation*}
+There are 10 choices for each digit (0-9) so we must switch between choices 9 times. We have 7 stars and 9 bars, so the total number of phone numbers is 
+\(
 {16 \choose 9}\text{.}
-\end{equation*}
+\)
 %
 \end{example}
 \begin{example}{}{example-stars-bars-int-sol}%
@@ -8210,7 +8210,7 @@ That said, while keeping the rigorous mathematical definition in mind is helpful
 Can you find the next term in the following sequences?%
 \par
 \hypertarget{p-2654}{}%
-\leavevmode%
+% \leavevmode%
 \begin{enumerate}
 \item\hypertarget{li-1526}{}\(7,7,7,7,7, \ldots\)%
 \item\hypertarget{li-1527}{}\(3, -3, 3, -3, 3, \ldots\)%
@@ -8230,7 +8230,7 @@ Can you find the next term in the following sequences?%
 No you cannot. You might guess that the next terms are:%
 \par
 \hypertarget{p-2656}{}%
-\leavevmode%
+% \leavevmode%
 \begin{multicols}{4}
 \begin{enumerate}
 \item\hypertarget{li-1536}{}\(7\)%
@@ -8272,7 +8272,7 @@ A \terminology{recursive definition} \index{recursive definition} (sometimes cal
 It is easier to understand what is going on here with an example:%
 \begin{example}{}{example-63}%
 \hypertarget{p-2668}{}%
-Here are a few closed formulas for sequences:\leavevmode%
+Here are a few closed formulas for sequences:%\leavevmode%
 \begin{itemize}[label=\textbullet]
 \item{}\(a_n = n^2\).%
 \item{}\(\d a_n = \frac{n(n+1)}{2}\).%
@@ -8331,8 +8331,8 @@ Note that now we can guess a closed formula for the \(n\)th term of the sequence
 \begin{align*}
 2a_{n-1} - a_{n-2} \amp = 2((n-1) + 3) - ((n-2) + 3)\\
 \amp = 2n + 4 - n - 1\\
-\amp = n + 3\\
-\amp = a_n\text{.}
+\amp = n + 3 = a_n\text{.}%\\
+% \amp = a_n\text{.}
 \end{align*}
 %
 \par
@@ -9281,7 +9281,12 @@ Are the sequences arithmetic? Geometric? If not, are they \emph{close} to being 
 \end{enumerate}
 %
 \end{divisionexercise}%
+<<<<<<< HEAD
 \begin{divisionexercise}{13}{}{}{exercise-212}%
+=======
+\clearpage
+\begin{divisionexercise}{13}{}{}{exercise-211}%
+>>>>>>> fixed pagebreaks
 \hypertarget{p-2954}{}%
 If you have enough toothpicks, you can make a large triangular grid. Below, are the triangular grids of size 1 and of size 2. The size 1 grid requires 3 toothpicks, the size 2 grid requires 9 toothpicks.%
 \begin{sidebyside}{2}{0.2}{0.1}{0.4}%
@@ -10088,7 +10093,7 @@ First, find a recurrence relation to describe the problem. Explain why the recur
 \item\hypertarget{li-1738}{}\hypertarget{p-3131}{}%
 Write out the first 6 terms of the sequence \(a_1, a_2, \ldots\).%
 \item\hypertarget{li-1739}{}\hypertarget{p-3132}{}%
-Solve the recurrence relation. That is, find a closed formula for \(a_n\).%
+Solve the recurrence relation. That is, find a closed formula.%
 \end{enumerate}
 %
 \end{divisionexercise}%
@@ -10097,7 +10102,7 @@ Solve the recurrence relation. That is, find a closed formula for \(a_n\).%
 You have access to \(1 \times 1\) tiles which come in 2 different colors and \(1\times 2\) tiles which come in 3 different colors. We want to figure out how many different \(1 \times n\) path designs we can make out of these tiles.\leavevmode%
 \begin{enumerate}[label=(\alph*)]
 \item\hypertarget{li-1743}{}\hypertarget{p-3138}{}%
-Find a recursive definition for the sequence \(a_n\) of paths of length \(n\).%
+Find a recursive definition for the number of paths of length \(n\).%
 \item\hypertarget{li-1744}{}\hypertarget{p-3139}{}%
 Solve the recurrence relation using the Characteristic Root technique.%
 \end{enumerate}
@@ -11797,7 +11802,9 @@ is a tautology.%
 \typeout{************************************************}
 %
 \begin{sectionptx}{Proofs}{}{Proofs}{}{}{sec_logic-proofs}
+
 \begin{introduction}{}%
+\vspace{-1em}
 \begin{investigation}{}{investigation-26}%
 \hypertarget{p-3609}{}%
 Decide which of the following are valid proofs of the following statement:%
@@ -11805,8 +11812,9 @@ Decide which of the following are valid proofs of the following statement:%
 \hypertarget{p-3610}{}%
 If \(a b\) is an even number, then \(a\) or \(b\) is even.%
 \end{quote}
+\vspace{-1ex}
 \hypertarget{p-3611}{}%
-\leavevmode%
+% \leavevmode%
 \begin{enumerate}
 \item\hypertarget{li-1891}{}\hypertarget{p-3612}{}%
 Suppose \(a\) and \(b\) are odd. That is, \(a=2k+1\) and \(b=2m+1\) for some integers \(k\) and \(m\). Then%
@@ -11816,17 +11824,16 @@ ab \amp =(2k+1)(2m+1)\\
 \amp =2(2km+k+m)+1\text{.}
 \end{align*}
 %
-\par
+\vspace{-1ex}
 \hypertarget{p-3613}{}%
 Therefore \(ab\) is odd.%
 \item\hypertarget{li-1892}{}\hypertarget{p-3614}{}%
-Assume that \(a\) or \(b\) is even - say it is \(a\) (the case where \(b\) is even will be identical). That is, \(a=2k\) for some integer \(k\). Then%
+Assume that \(a\) or \(b\) is even - say it is \(a\) (the case where \(b\) is even is identical). That is, \(a=2k\) for some integer \(k\). Then%
 \begin{align*}
 ab \amp =(2k)b\\
 \amp =2(kb)\text{.}
 \end{align*}
 %
-\par
 \hypertarget{p-3615}{}%
 Thus \(ab\) is even.%
 \item\hypertarget{li-1893}{}\hypertarget{p-3616}{}%
@@ -11834,10 +11841,10 @@ Suppose that \(ab\) is even but \(a\) and \(b\) are both odd. Namely, \(ab = 2n\
 \begin{align*}
 2n \amp =(2k+1)(2j+1)\\
 2n \amp =4kj+2k+2j+1\\
-n \amp = 2kj+k+j+\frac{1}{2}\text{.}
+n \amp = 2kj+k+j+0.5\text{.}
 \end{align*}
 %
-\par
+\vspace{-1ex}
 \hypertarget{p-3617}{}%
 But since \(2kj+k+j\) is an integer, this says that the integer \(n\) is equal to a non-integer, which is impossible.%
 \item\hypertarget{li-1894}{}\hypertarget{p-3618}{}%
@@ -11849,12 +11856,13 @@ ab \amp =(2k+1)b\\
 2(n-kb)\amp =b\text{.}
 \end{align*}
 %
-\par
+\vspace{-1ex}
 \hypertarget{p-3619}{}%
 Therefore \(b\) must be even.%
 \end{enumerate}
 %
 \end{investigation}
+\clearpage
 \hypertarget{p-3620}{}%
 Anyone who doesn't believe there is creativity in mathematics clearly has not tried to write proofs. Finding a way to convince the world that a particular statement is necessarily true is a mighty undertaking and can often be quite challenging. There is not a guaranteed path to success in the search for proofs. For example, in the summer of 1742, a German mathematician by the name of Christian Goldbach wondered whether every even integer greater than 2 could be written as the sum of two primes. Centuries later, we still don't have a proof of this apparent fact (computers have checked that ``Goldbach's Conjecture'' holds for all numbers less than \(4\times 10^{18}\), which leaves only infinitely many more numbers to check).%
 \par
@@ -12091,6 +12099,7 @@ We proceed by contradiction. So suppose there \emph{are} integers \(x\) and \(y\
 \hypertarget{p-3677}{}%
 The \terminology{Pigeonhole Principle}: \index{pigeonhole principle} If more than \(n\) pigeons fly into \(n\) pigeon holes, then at least one pigeon hole will contain at least two pigeons. Prove this!%
 \par\smallskip%
+\clearpage
 \noindent\textbf{Solution}.\hypertarget{solution-396}{}~~%
 \begin{proof}{}
 \hypertarget{p-3678}{}%
@@ -12215,6 +12224,7 @@ Since \(n^3 - n\) is even in both exhaustive cases, we see that \(n^3 - n\) is i
 \typeout{Exercises  Exercises}
 \typeout{************************************************}
 %
+\clearpage
 \begin{exercises-subsection-numberless}{Exercises}{}{Exercises}{}{}{exercises_logic-proofs}
 \begin{divisionexercise}{\hyperlink{solution-399-back}{1}}{}{}{exercise-306}%
 \hypertarget{p-3699}{}%
@@ -13985,11 +13995,11 @@ Although we will not consider this in detail, these algorithms are usually appli
 Which of the following graphs are trees?\leavevmode%
 \begin{enumerate}[label=(\alph*)]
 \item\hypertarget{li-2049}{}\hypertarget{p-4123}{}%
-\(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and \(E = \{\{a, b\}, \{a,e\}, \{b, c\}, \{c,d\}, \{d,e\} \}\)%
+\(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and\\ \(E = \{\{a, b\}, \{a,e\}, \{b, c\}, \{c,d\}, \{d,e\} \}\)%
 \item\hypertarget{li-2050}{}\hypertarget{p-4124}{}%
-\(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and \(E = \{\{a, b\}, \{b, c\}, \{c,d\}, \{d,e\}\}\)%
+\(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and\\ \(E = \{\{a, b\}, \{b, c\}, \{c,d\}, \{d,e\}\}\)%
 \item\hypertarget{li-2051}{}\hypertarget{p-4125}{}%
-\(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and \(E = \{\{a, b\}, \{a, c\}, \{a,d\}, \{a,e\}\}\)%
+\(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and\\ \(E = \{\{a, b\}, \{a, c\}, \{a,d\}, \{a,e\}\}\)%
 \item\hypertarget{li-2052}{}\hypertarget{p-4126}{}%
 \(G = (V, E)\) with \(V = \{a, b, c, d, e\}\) and \(E = \{\{a, b\}, \{a, c\}, \{d,e\}\}\)%
 \end{enumerate}
@@ -14061,6 +14071,7 @@ Give a careful proof by induction on the number of vertices, that every tree is 
 \begin{divisionexercise}{\hyperlink{hint-100-back}{10}}{}{}{exercise-363}%
 \hypertarget{p-4164}{}%
 Consider the tree drawn below.%
+\par
 \begin{sidebyside}{1}{0.35}{0.35}{0}%
 \begin{sbspanel}{0.3}%
 \resizebox{\linewidth}{!}{{
@@ -14078,6 +14089,7 @@ Consider the tree drawn below.%
     \draw (a) -- (b) -- (c) (b) -- (d) (b) -- (e) -- (f) -- (g) (f) -- (h) (f) -- (i);
     \foreach \x in {a,...,i}{
     \draw (\x) \vb{\footnotesize $\x$};
+    \draw[white] (0,2) node{};
     }
   }
 \end{tikzpicture}
@@ -15014,6 +15026,7 @@ Because a number of these friends dated there are also conflicts between friends
 \begin{sidebyside}{1}{0.05}{0.05}{0}%
 \begin{sbspanel}{0.9}%
 {\centering%
+\footnotesize
 \begin{tabular}{lllllllllll}
 \multicolumn{1}{lA}{Friend}&A&B&C&D&E&F&G&H&I&J\tabularnewline\hrulethin
 \multicolumn{1}{lA}{Conflicts}&CFJ&J&AEF&H&CFG&ACEGI&EFI&D&AFG&B
@@ -15065,16 +15078,15 @@ The two problems below can be solved using graph coloring. For each problem, rep
 Your Quidditch league has 5 teams. You will play a tournament next week in which every team will play every other team once. Each team can play at most one match each day, but there is plenty of time in the day for multiple matches. What is the fewest number of days over which the tournament can take place?%
 \item\hypertarget{li-2096}{}\hypertarget{p-4341}{}%
 Ten members of Math Club are driving to a math conference in a neighboring state. However, some of these students have dated in the past, and things are still a little awkward. Each student lists which other students they refuse to share a car with; these conflicts are recored in the table below. What is the fewest number of cars the club needs to make the trip? Do not worry about running out of seats, just avoid the conflicts.%
-\begin{sidebyside}{1}{0.1}{0.1}{0}%
-\begin{sbspanel}{0.8}%
-{\centering%
+
+{\flushleft%
+\footnotesize
 \begin{tabular}{ccccccccccc}
-\multicolumn{1}{lB}{Student:}&A&B&C&D&E&F&G&H&I&J\tabularnewline\hrulemedium
-\multicolumn{1}{lB}{Conflicts:}&BEJ&ADG&HJ&BF&AI&DJ&B&CI&EHJ&ACFI
+\multicolumn{1}{lB}{Student}&A&B&C&D&E&F&G&H&I&J\tabularnewline\hrulemedium
+\multicolumn{1}{lB}{Conflicts}&BEJ&ADG&HJ&BF&AI&DJ&B&CI&EHJ&ACFI
 \end{tabular}
-\par}
-\end{sbspanel}%
-\end{sidebyside}%
+}
+
 \end{enumerate}
 %
 \end{divisionexercise}%
@@ -16276,7 +16288,7 @@ We have seen how to find generating functions from \(\frac{1}{1-x}\) using multi
 For example, consider the sequence \(2, 4, 10, 28, 82, \ldots\). How could we move to the sequence of first differences: \(2, 6, 18, 54,\ldots\)? We want to subtract 2 from the 4, 4 from the 10, 10 from the 28, and so on. So if we subtract (term by term) the sequence \(0, 2, 4, 10, 28,\ldots\) from \(2, 4, 10, 28\ldots\), we will be set. We can get the generating function for \(0,2,4,10,28,\ldots\) from the generating function for \(2,4,10,28\ldots\) by multiplying by \(x\). Use \(A\) to represent the generating function for \(2, 4, 10, 28, 82, \ldots\) Then:%
 \begin{align*}
 A \amp  = 2 + 4x + 10x^2 +28x^3 + 82x^4 + \cdots\\
-\underline{-xA} \amp  \underline{\,\,= 0 + 2x + 4x^2 + 10x^3 + 28 x^4 + 82x^5 + \cdots}\\
+\underline{-\qquad xA} \amp  \underline{\,\,= 0 + 2x + 4x^2 + 10x^3 + 28 x^4 + 82x^5 + \cdots}\\
 (1-x)A \amp  = 2 + 2x + 6x^2 + 18x^3 + 54x^4 + \cdots
 \end{align*}
 %
@@ -16290,9 +16302,10 @@ Find a generating function for \(1, 3, 5, 7, 9,\ldots\).%
 \noindent\textbf{Solution}.\hypertarget{solution-476}{}~~%
 \hypertarget{p-4600}{}%
 Notice that the sequence of differences is constant. We know how to find the generating function for any constant sequence. So denote the generating function for \(1, 3, 5, 7, 9, \ldots\) by \(A\). We have%
+\clearpage
 \begin{align*}
 A \amp  = 1 + 3x + 5x^2 + 7x^3 + 9x^4 + \cdots\\
-\underline{-xA} \amp  \underline{\,\,= 0 + x + 3x^2 +  5x^3 + 7x^4 + 9x^5 + \cdots}\\
+\underline{- \qquad xA} \amp  \underline{\,\,= 0 + x + 3x^2 +  5x^3 + 7x^4 + 9x^5 + \cdots}\\
 (1-x)A \amp  = 1 + 2x + 2x^2 + 2x^3 + 2x^4 + \cdots
 \end{align*}
 %
@@ -17308,7 +17321,7 @@ This says that one way to make \textdollar{}6.37 is to take 121 of the 5-cent st
 0&(121, 4)&125\tabularnewline[0pt]
 1&(113, 9)&122\tabularnewline[0pt]
 2&(105, 13)&119\tabularnewline[0pt]
-\textbackslash{}vdots&\textbackslash{}vdots&\textbackslash{}vdots
+\vdots&\vdots&\vdots
 \end{tabular}
 \par}
 \end{sbspanel}%
@@ -17649,6 +17662,7 @@ This one might remind you of \hyperref[ex-comb-proof-3elemsets]{Example~\ref{ex-
 \hypertarget{p-1935}{}%
 For the lattice paths, think about what sort of paths \(2^n\) would count.  Not all the paths will end at the same point, but you could describe the set of end points as a line.%
 \end{divisionsolution}%
+\clearpage
 \vskip 2ex \centerline{\bfseries\scshape\large 1.6\space{} Exercises}
 \par\smallskip
 \begin{divisionsolution}{1.6.4}{}{exercise-150}%
@@ -19002,7 +19016,9 @@ We need \(6 \cdot 64 = 384\) coins (192 of each).%
 \end{enumerate}
 %
 \end{divisionsolution}%
-\vskip 2ex \centerline{\bfseries\scshape\large 1.3\space{} Exercises}
+\clearpage
+% \vskip 2ex 
+\centerline{\bfseries\scshape\large 1.3\space{} Exercises}
 \par\smallskip
 \begin{divisionsolution}{1.3.1}{}{exercise-108}%
 \hypertarget{solution-140-back}~~%
@@ -19119,7 +19135,9 @@ First, decide where to put the ``a''s. There are 7 positions, and we must choose
 \end{enumerate}
 %
 \end{divisionsolution}%
-\vskip 2ex \centerline{\bfseries\scshape\large 1.4\space{} Exercises}
+\clearpage
+% \vskip 2ex 
+\centerline{\bfseries\scshape\large 1.4\space{} Exercises}
 \par\smallskip
 \begin{divisionsolution}{1.4.1}{}{exercise-122}%
 \hypertarget{solution-169-back}~~%
@@ -19229,7 +19247,12 @@ representing that \(x_1 = 1\), \(x_2 = 2\), \(x_3 = 0\), and \(x_4 = 3\).%
 \end{enumerate}
 %
 \end{divisionsolution}%
+<<<<<<< HEAD
 \begin{divisionsolution}{1.5.5}{}{exercise-140}%
+=======
+\clearpage
+\begin{divisionsolution}{1.5.5}{}{exercise-139}%
+>>>>>>> fixed pagebreaks
 \hypertarget{solution-183-back}~~%
 \hypertarget{p-2057}{}%
 \leavevmode%
@@ -20387,7 +20410,9 @@ Suppose you roll 10 dice, but that there are NOT four matching rolls. This means
 \end{enumerate}
 %
 \end{divisionsolution}%
-\vskip 2ex \centerline{\bfseries\scshape\large 3.3\space{} Chapter Review}
+\clearpage
+% \vskip 2ex 
+\centerline{\bfseries\scshape\large 3.3\space{} Chapter Review}
 \par\smallskip
 \begin{divisionsolution}{3.3.1}{}{tt}%
 \hypertarget{solution-403-back}~~%
