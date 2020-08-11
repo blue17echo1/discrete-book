@@ -115,7 +115,7 @@ SERVER = https://webwork-dev.aimath.org
 diagrams:
 	install -d $(HTMLOUT)/images
 	-rm $(HTMLOUT)/images/*.svg
-	$(PTXSCRIPT)/mbx -v -c latex-image -f svg -d $(HTMLOUT)/images $(MAIN)
+	$(PTXSCRIPT)/pretext -v -c latex-image -f svg -d $(HTMLOUT)/images $(MAIN)
 	# $(PTXSCRIPT)/mbx -v -c sageplot    -f pdf -d $(HTMLOUT)/images $(MAIN)
 	# $(PTXSCRIPT)/mbx -v -c sageplot    -f svg -d $(HTMLOUT)/images $(MAIN)
 

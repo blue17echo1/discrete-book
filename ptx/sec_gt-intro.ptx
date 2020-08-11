@@ -113,18 +113,18 @@
 
 				<latex-image>
 					\begin{tikzpicture}
-\coordinate (A) at (-1,0);
-\coordinate (B) at (-1, 1);
-\coordinate (C) at (0,0);
-\coordinate (D) at (0,1);
-\coordinate (E) at (1,0);
-\coordinate (F) at (1,1);
+            \coordinate (A) at (-1,0);
+            \coordinate (B) at (-1, 1);
+            \coordinate (C) at (0,0);
+            \coordinate (D) at (0,1);
+            \coordinate (E) at (1,0);
+            \coordinate (F) at (1,1);
 
-\draw (A) node[below] {\(a\)} -- (B) node[above] {\(b\)} -- (C) node[below] {\(c\)} -- (D) node[above] {\(d\)} -- (E) node[below] {\(e\)} -- (F) node[above] {\(f\)} -- (C) (A) -- (D);
-\foreach \x in {(A), (B), (C), (D), (E), (F)}{
-	\fill \x \v;
-}
-\end{tikzpicture}
+            \draw (A) node[below] {\(a\)} -- (B) node[above] {\(b\)} -- (C) node[below] {\(c\)} -- (D) node[above] {\(d\)} -- (E) node[below] {\(e\)} -- (F) node[above] {\(f\)} -- (C) (A) -- (D);
+            \foreach \x in {(A), (B), (C), (D), (E), (F)}{
+              \fill \x \v;
+            }
+          \end{tikzpicture}
 				</latex-image>
       </image>
 
@@ -151,18 +151,18 @@
 
 				<latex-image>
 					\begin{tikzpicture}
-\coordinate (A) at (-1,0);
-\coordinate (B) at (-1, 1);
-\coordinate (C) at (0,0);
-\coordinate (D) at (0,1);
-\coordinate (E) at (1,0);
-\coordinate (F) at (1,1);
+            \coordinate (A) at (-1,0);
+            \coordinate (B) at (-1, 1);
+            \coordinate (C) at (0,0);
+            \coordinate (D) at (0,1);
+            \coordinate (E) at (1,0);
+            \coordinate (F) at (1,1);
 
-\draw (A) node[below] {\(a\)} -- (B) node[above] {\(c\)} -- (C) node[below] {\(e\)} -- (D) node[above] {\(b\)} -- (E) node[below] {\(d\)} -- (F) node[above] {\(f\)} -- (C) (A) -- (D);
-\foreach \x in {(A), (B), (C), (D), (E), (F)}{
-	\fill \x \v;
-}
-\end{tikzpicture}
+            \draw (A) node[below] {\(a\)} -- (B) node[above] {\(c\)} -- (C) node[below] {\(e\)} -- (D) node[above] {\(b\)} -- (E) node[below] {\(d\)} -- (F) node[above] {\(f\)} -- (C) (A) -- (D);
+            \foreach \x in {(A), (B), (C), (D), (E), (F)}{
+              \fill \x \v;
+            }
+          \end{tikzpicture}
 				</latex-image>
       </image>
 
@@ -284,8 +284,8 @@
 
 			<latex-image>
 				\begin{tikzpicture}[scale=0.7]
-	    \draw  (-1,1) \vl{\(a\)} -- (1,1) \vr{\(b\)} (-1,1) -- (-1,-1) \vl{\(c\)} -- (1,-1) \vr{\(d\)} -- (1,1) -- (-1,-1);
-	  \end{tikzpicture}
+          \draw  (-1,1) \vl{\(a\)} -- (1,1) \vr{\(b\)} (-1,1) -- (-1,-1) \vl{\(c\)} -- (1,-1) \vr{\(d\)} -- (1,1) -- (-1,-1);
+        \end{tikzpicture}
 			</latex-image>
     </image>
 
