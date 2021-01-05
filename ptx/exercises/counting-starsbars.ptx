@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises_stars-and-bars" permid="zVa">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises_sticks-and-stones" permid="zVa">
 
   <exercise permid="SfI">
     <idx><h>multiset</h><h>counting</h></idx>
@@ -55,10 +55,10 @@
 
               <li permid="Xzv">
                 <p permid="BvS">
-                  Use stars and bars:
+                  Use sticks and stones:
                   each star represents one of the 5 elements of the set,
-                  each bar represents a switch between digits.
-                  So there are 5 stars and 9 bars,
+                  each stick represents a switch between digits.
+                  So there are 9 sticks and 5 stones,
                   giving us <m>{14 \choose 9}</m> sets.
                 </p>
               </li>
@@ -121,10 +121,10 @@
 
               <li permid="wcf">
                 <p permid="mmU">
-                  This requires stars and bars.
-                  Use a star to represent each of the 5 digits in the number,
-                  and use their position relative to the bars to say what numeral fills that spot.
-                  So we will have 5 stars and 6 bars, giving
+                  This requires sticks and stones.
+                  Use a stone to represent each of the 5 digits in the number,
+                  and use their position relative to the sticks to say what numeral fills that spot.
+                  So we will have 6 sticks and 5 stones, giving
                   <m>{11 \choose 6}</m> numbers.
                 </p>
               </li>
@@ -138,12 +138,12 @@
   <exercise permid="eua">
     <statement>
       <p permid="lRv">
-        Each of the counting problems below can be solved with stars and bars.
+        Each of the counting problems below can be solved with sticks and stones.
         For each, say what outcome the diagram
         <me permid="Hzz">
-          ***|*||**|
+          \circ\circ\circ|\circ||\circ\circ|
         </me>
-        represents, if there are the correct number of stars and bars for the problem.
+        represents, if there are the correct number of sticks and stones for the problem.
         Otherwise, say why the diagram does not represent any outcome,
         and what a correct diagram would look like.
 
@@ -187,14 +187,14 @@
           <li permid="gTh">
             <p permid="XdW">
               This is backwards.
-              We don't want the stars to represent the kids because the kids are not identical,
-              but the stars are.
-              Instead we should use 5 stars
+              We don't want the stones to represent the kids because the kids are not identical,
+              but the stones are.
+              Instead we should use 5 stones
               (for the lollipops)
-              and use 5 bars to switch between the 6 kids.
+              and use 5 sticks to switch between the 6 kids.
               For example,
               <me permid="nGI">
-                **||***|||
+                \circ\circ||\circ\circ\circ|||
               </me>
               would
               represent the outcome with the first kid getting 2 lollipops,
@@ -211,13 +211,13 @@
           <li permid="thz">
             <p permid="jso">
               This doesn't represent a solution.
-              Each star should represent one of the 6 units that add up to 6, and the bars should
+              Each stone should represent one of the 6 units that add up to 6, and the sticks should
               <em>switch</em>
               between the different variables.
-              We have one too many bars.
+              We have one too many sticks.
               An example of a correct diagram would be
               <me permid="TNR">
-                *|**||***
+                \circ|\circ\circ||\circ\circ\circ
               </me>,
               representing that
               <m>x_1 = 1</m>,
@@ -274,14 +274,14 @@
               <li permid="lDa">
                 <m>{18 \choose 4}</m>
                 ways.
-                Each outcome can be represented by a sequence of 14 stars and 4 bars.
+                Each outcome can be represented by a sequence of 4 sticks and 14 stones.
               </li>
 
               <li permid="RKj">
                 <m>{13 \choose 4}</m>
                 ways.
                 First put one ball in each bin.
-                This leaves 9 stars and 4 bars.
+                This leaves 4 sticks and 9 stones.
               </li>
             </ol>
           </p>
@@ -346,15 +346,15 @@
               <li permid="qmT">
                 <p permid="YTj">
                   <m>{7 \choose 2}</m> solutions.
-                  After each variable gets 1 star for free,
-                  we are left with 5 stars and 2 bars.
+                  After each variable gets 1 stone for free,
+                  we are left with 2 sticks and 5 stones.
                 </p>
               </li>
 
               <li permid="Wuc">
                 <p permid="Fas">
                   <m>{10 \choose 2}</m> solutions.
-                  We have 8 stars and 2 bars.
+                  We have 2 sticks and 8 stones.
                 </p>
               </li>
 
@@ -649,7 +649,7 @@
               <li permid="kxH">
                 <p permid="DUZ">
                   <m>{23 \choose 4}</m> sodas
-                  (order does not matter and repeats are allowed; 4 stars and 19 bars).
+                  (order does not matter and repeats are allowed; 19 sticks and 4 stones).
                 </p>
               </li>
 

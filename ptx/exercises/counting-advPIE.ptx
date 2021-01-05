@@ -57,12 +57,12 @@
               <li permid="XrE">
                 <m>{9 \choose 3}</m> meals.
                 First spend $7 to buy one of each item,
-                then use 3 stars to select items between 6 bars.
+                then use 3 stones to select items between 6 sticks.
               </li>
 
               <li permid="DyN">
                 <m>{16 \choose 6}</m> meals.
-                Here you have 10 stars and 6 bars
+                Here you have 10 stones and 6 sticks
                 (separating the 7 items).
               </li>
 

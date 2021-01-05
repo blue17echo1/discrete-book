@@ -66,13 +66,13 @@
             <ol permid="gZY">
               <li permid="siX">
                 <m>{8 \choose 5}</m> ways, after giving one present to each kid,
-                you are left with 5 presents (stars) which need to be divide among the 4 kids
-                (giving 3 bars).
+                you are left with 5 presents (stones) which need to be divide among the 4 kids
+                (giving 3 sticks).
               </li>
 
               <li permid="Yqg">
                 <m>{12 \choose 9}</m> ways.
-                You have 9 stars and 3 bars.
+                You have 3 sticks and 9 stones.
               </li>
 
               <li permid="Exp">
@@ -1139,7 +1139,7 @@
         </statement>
         <hint permid="cqf">
           <p permid="Dzn">
-            Stars and bars.
+            Sticks and stones.
           </p>
         </hint>
           <!-- TODO: add to the solution -->
@@ -1395,7 +1395,7 @@
               <li permid="mIg">
                 <m>{21 \choose 12}</m> choices.
                 You must switch between cookie type 9 times as you make your 12 cookies.
-                The cookies are the stars, the switches between cookie types are the bars.
+                The cookies are the stones, the switches between cookie types are the sticks.
               </li>
 
               <li permid="SPp">

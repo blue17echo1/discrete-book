@@ -57,7 +57,7 @@
       </p>
     </investigation>
     <p permid="yke">
-      Stars and bars allows us to count the number of ways to distribute 10 cookies to 3 kids and natural number solutions to <m>x+y+z = 11</m>,
+      Sticks and stones allows us to count the number of ways to distribute 10 cookies to 3 kids and natural number solutions to <m>x+y+z = 11</m>,
       for example.
       A relatively easy modification allows us to put a <em>lower bound</em>
       restriction on these problems:
@@ -66,7 +66,7 @@
       (or variable)
       2 cookies
       (or units)
-      and then distributing the rest using stars and bars.
+      and then distributing the rest using sticks and stones.
     </p>
 
     <p permid="ern">
@@ -81,7 +81,7 @@
       we must count the number of ways to distribute 11 cookies to 3 kids in which <em>one or more</em>
       of the kids gets more than 4 cookies.
       For any particular kid, this is not a problem;
-      we do this using stars and bars.
+      we do this using sticks and stones.
       But how to combine the number of ways for kid A, or B or C? We must use the PIE.
     </p>
 
@@ -115,7 +115,7 @@
       <solution permid="Oka">
         <p permid="UnH">
           Without the <q>no more than 4</q> restriction,
-          the answer would be <m>{13 \choose 2}</m>, using 11 stars and 2 bars
+          the answer would be <m>{13 \choose 2}</m>, using 11 stones and 2 sticks
           (separating the three kids).
           Now count the number of ways that one or more of the kids violates the condition,
           i.e., gets at least 4 cookies.
@@ -139,7 +139,7 @@
               <m>|A| = {8 \choose 2}</m>.
               First give Alberto 5 cookies,
               then distribute the remaining 6 to the three kids without restrictions,
-              using 6 stars and 2 bars.
+              using 6 stones and 2 sticks.
             </li>
 
             <li permid="gXy">
@@ -155,7 +155,7 @@
             <li permid="tlQ">
               <m>|A \cap B| = {3 \choose 2}</m>.
               Give Alberto and Bernadette 5 cookies each,
-              leaving 1 (star) to distribute to the three kids (2 bars).
+              leaving 1 (star) to distribute to the three kids (2 sticks).
             </li>
 
             <li permid="ZsZ">
@@ -222,13 +222,13 @@
       <solution permid="urj">
         <p permid="YXA">
           There are <m>{13 \choose 3}</m> ways to distribute 10 cookies to 4 kids
-          (using 10 stars and 3 bars).
+          (using 10 stones and 3 sticks).
           We will subtract all the outcomes in which a kid gets 3 or more cookies.
           How many outcomes are there like that?
           We can force kid A to eat 3 or more cookies by giving him 3 cookies before we start.
           Doing so reduces the problem to one in which we have 7 cookies to give to 4 kids without any restrictions.
           In that case,
-          we have 7 stars (the 7 remaining cookies) and 3 bars
+          we have 7 stones (the 7 remaining cookies) and 3 sticks
           (one less than the number of kids)
           so we can distribute the cookies in
           <m>{10 \choose 3}</m> ways.
@@ -242,7 +242,7 @@
           We must get rid of the outcomes in which two kids have too many cookies.
           There are <m>{4 \choose 2}</m> ways to select 2 kids to give extra cookies.
           It takes 6 cookies to do this, leaving only 4 cookies.
-          So we have 4 stars and still 3 bars.
+          So we have 4 stones and still 3 sticks.
           The remaining 4 cookies can thus be distributed in <m>{7 \choose 3}</m> ways
           (for each of the <m>{4 \choose 2}</m> choices of which 2 kids to over-feed).
         </p>
@@ -251,7 +251,7 @@
           But now we have removed too much.
           We must add back in all the ways to give too many cookies to three kids.
           This uses 9 cookies,
-          leaving only 1 to distribute to the 4 kids using stars and bars,
+          leaving only 1 to distribute to the 4 kids using sticks and stones,
           which can be done in <m>{4 \choose 3}</m> ways.
           We must consider this outcome for every possible choice of which three kids we over-feed,
           and there are <m>{4 \choose 3}</m> ways of selecting that set of 3 kids.
@@ -293,7 +293,7 @@
     <example permid="VOz">
       <statement>
         <p permid="cCa">
-          Earlier (<xref ref="example-stars-bars-int-sol"/>) we counted the number of solutions to the equation
+          Earlier (<xref ref="example-sticks-stones-int-sol"/>) we counted the number of solutions to the equation
           <me permid="BOE">
             x_1 + x_2 + x_3 + x_4 + x_5 = 13
           </me>,
@@ -380,7 +380,7 @@
       </p>
     </investigation>
     <p permid="Pip">
-      The advanced use of PIE has applications beyond stars and bars.
+      The advanced use of PIE has applications beyond sticks and stones.
       A <term>derangement</term>
           <idx><h>derangement</h></idx>
       of <m>n</m> elements <m>\{1,2,3,\ldots,
@@ -953,7 +953,7 @@
     <p permid="QXC">
       While it is possible to interpret combinations as functions,
       perhaps the better advice is to instead use combinations
-      (or stars and bars)
+      (or sticks and stones)
       when functions are not quite the right way to interpret the counting question.
     </p>
   </subsection>
